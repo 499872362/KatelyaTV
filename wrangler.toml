@@ -41,8 +41,8 @@ NODE_ENV = "production"
 
 [[env.production.d1_databases]]
 binding = "DB"
-database_name = "yingshi"
-database_id = "ceaa2525-2d1b-4668-ac31-dbb8666fa52e"
+database_name = "katelyatv-db"
+database_id = "47c90183-2415-4e9e-8039-a3f019ac4154"
 
 [build]
 command = "pnpm pages:build"
