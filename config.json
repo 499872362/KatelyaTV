@@ -104,6 +104,18 @@
       "api": "https://zy.xmm.hk/api.php/provide/vod",
       "name": "小猫咪资源",
       "is_adult": false
-    }
-  }
+    },
+    "1080zyku": {
+      "api": "https://api.1080zyku.com/inc/api_mac10.php",
+      "name": "TV-1080资源",
+      "detail": "https://api.1080zyku.com",
+      "is_adult": false
+    },
+	    "suoniapi": {
+      "api": "https://suoniapi.com/api.php/provide/vod",
+      "name": "TV-索尼资源",
+      "detail": "",
+      "is_adult": false
+    },
+
 }
