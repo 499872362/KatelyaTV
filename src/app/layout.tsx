@@ -104,6 +104,10 @@ export default async function RootLayout({
             {children}
           </SiteProvider>
         </ThemeProvider>
+        <Script
+  src="//api.tongjiniao.com/c?_=845417659603361792"
+  strategy="afterInteractive"
+/>
       </body>
     </html>
   );
