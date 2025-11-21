@@ -114,8 +114,10 @@
 	    "suoniapi": {
       "api": "https://suoniapi.com/api.php/provide/vod",
       "name": "TV-索尼资源",
-      "detail": "",
+      "detail": "https://suoniapi.com",
       "is_adult": false
-    },
-
+    
+		}
+  }
 }
+
