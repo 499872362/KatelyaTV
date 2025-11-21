@@ -1,7 +1,6 @@
-typescript
-import Script from 'next/script';
 import type { Metadata, Viewport } from 'next';
 import { Inter } from 'next/font/google';
+import Script from 'next/script';
 
 import './globals.css';
 import 'sweetalert2/dist/sweetalert2.min.css';
@@ -91,7 +90,7 @@ export default async function RootLayout({
         />
       </head>
       <body
-        className={`${inter.className} min-h-screen bg-white text-gray-900 dark:bg-black dark:text-gray-200`}
+        className={`${inter.classine} min-h-screen bg-white text-gray-900 dark:bg-black dark:text-gray-200`}
       >
         {/* 浮动几何形状装饰 */}
         <FloatingShapes />
@@ -106,8 +105,8 @@ export default async function RootLayout({
             {children}
           </SiteProvider>
         </ThemeProvider>
-      
-                {/* 新的统计代码 */}
+
+        {/* 新的统计代码 */}
         <Script
           id="mtj-analytics"
           strategy="afterInteractive"
@@ -123,7 +122,7 @@ export default async function RootLayout({
             `
           }}
         />
- </body>
+      </body>
     </html>
   );
 }
