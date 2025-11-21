@@ -104,13 +104,25 @@ export default async function RootLayout({
             {children}
           </SiteProvider>
         </ThemeProvider>
-        <Script
-  src="//api.tongjiniao.com/c?_=845417659603361792"
-  strategy="afterInteractive"
+      
 />
-        document.write("<script>!(function () {\"use strict\";var w = window, d = document, u = \"//api.tongjiniao.com/c?_=845417659603361792\", s =document.createElement(\"script\"), r = document.getElementsByTagName(\"script\")[0];s.type = \"text/javascript\";s.setAttribute(\"charset\", \"UTF-8\");s.async = !0;s.src = u;r.parentNode.insertBefore(s, r)})();</script>")
-
-      </body>
+                {/* 新的统计代码 */}
+        <Script
+          id="mtj-analytics"
+          strategy="afterInteractive"
+          dangerouslySetInnerHTML={{
+            __html: `
+              var _mtj = _mtj || [];
+              (function () {
+                var mtj = document.createElement("script");
+                mtj.src = "https://node95.aizhantj.com:21233/tjjs/?k=d9rvspbndyv";
+                var s = document.getElementsByTagName("script")[0];
+                s.parentNode.insertBefore(mtj, s);
+              })();
+            `
+          }}
+        />
+ </body>
     </html>
   );
 }
