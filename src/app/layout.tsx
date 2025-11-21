@@ -1,3 +1,5 @@
+typescript
+import Script from 'next/script';
 import type { Metadata, Viewport } from 'next';
 import { Inter } from 'next/font/google';
 
@@ -105,7 +107,6 @@ export default async function RootLayout({
           </SiteProvider>
         </ThemeProvider>
       
-/>
                 {/* 新的统计代码 */}
         <Script
           id="mtj-analytics"
