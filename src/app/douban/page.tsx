@@ -6,7 +6,7 @@ import { useSearchParams } from 'next/navigation';
 import { Suspense } from 'react';
 import { useCallback, useEffect, useRef, useState } from 'react';
 
-import { getDoubanCategories } from '@/lib/douban.client';
+import { getCategories } from '@/lib/douban.client'
 import { DoubanItem } from '@/lib/types';
 
 import DoubanCardSkeleton from '@/components/DoubanCardSkeleton';
@@ -113,7 +113,7 @@ function DoubanPageClient() {
   const loadInitialData = useCallback(async () => {
     try {
       setLoading(true);
-      const data = await getDoubanCategories(getRequestParams(0));
+      const data = await getCategories(getRequestParams(0));
 
       if (data.code === 200) {
         setDoubanData(data.list);
@@ -171,7 +171,7 @@ function DoubanPageClient() {
         try {
           setIsLoadingMore(true);
 
-          const data = await getDoubanCategories(
+          const data = await getCategories(
             getRequestParams(currentPage * 25)
           );
 
